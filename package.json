@@ -1,0 +1,23 @@
+{
+  "name": "thebicycleshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theoverse/the-bicycle-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theoverse/the-bicycle-shop/issues"
+  },
+  "homepage": "https://github.com/theoverse/the-bicycle-shop#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
