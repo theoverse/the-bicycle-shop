@@ -67,8 +67,6 @@ const server = http.createServer(async (req, res) => {
     }
 })
 
-server.listen(3000)
-
 function replaceTemplate(html, bicycle) {
     html = html.replace(/<%IMAGE%>/g, bicycle.image)
     html = html.replace(/<%NAME%>/g, bicycle.name)
@@ -95,3 +93,10 @@ function replaceTemplate(html, bicycle) {
 
     return html
 }
+
+let port = process.env.PORT
+if (port == null || port == "") {
+    port = 3000
+}
+
+server.listen(port)
